@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.alamin {
+  width: 600px;
+  padding: 300px 0;
+  background: black;
+  margin: 0 auto;
+}
+.alamin h1 {
+  color: white;
+  position: relative;
+  display: inline;
+  transition: 0.4s;
+  
+}
+.alamin h1::before {
+  width: 70px;
+  height: 4px;
+  background: green;
+  content: "";
+  position: absolute;
+  left: -80px;
+  top: 50%;
+  /* transform: translateY(-50%); */
+  transition: 0.4s;
+}
+.alamin h1::before:hover{
+  background-color: rebeccapurple;
+}
+.alamin h1::after{
+  width: 70px;
+  height: 4px;
+  background: green;
+  content: "";
+  position: absolute;
+  right: -80px;
+  bottom: 50%;
+
+}
+.alamin h1:hover{
+  color: red;
+}
+.alamin h1 span{
+  position: relative;
+}
+.alamin h1 span::before{
+  height: 70px;
+  width: 4px;
+  background:red;
+  content: "";
+  position:absolute;
+  left: 25%;
+  bottom: -80px;
+}
+.alamin h1 span::after{
+  height: 70px;
+  width: 4px;
+  background: red;
+  content: "";
+  position:absolute;
+  left: 25%;
+  top: -80px;
+}
